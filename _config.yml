@@ -1,0 +1,12 @@
+# Site settings
+title: BitShiftMask
+email: bitshiftmask@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+    Bits, Shifts, and Masks. Github Blog of James Munns
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://bitshiftmask.com" # the base hostname & protocol for your site
+twitter_username: bitshiftmask
+github_username:  jamesmunns
+
+# Build settings
+markdown: kramdown
