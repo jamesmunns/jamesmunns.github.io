@@ -13,20 +13,20 @@ Well, after a bit of learning, and a bit of fighting with a Docker Script I wrot
 Achieved so far:
 
 * Installed all components in a Docker Container
-** Ubuntu 14.04
-** Virtualenv, Python3.x, pip
-** Django
-** Postgresql
-** Gunicorn
-** NGINX
+    * Ubuntu 14.04
+    * Virtualenv, Python3.x, pip
+    * Django
+    * Postgresql
+    * Gunicorn
+    * NGINX
 * Checked that some of the next steps work
 
 Still to be done:
 
 * Configure Postgres with initial config
-** Initial install
-** Users? DB contents? It says 'postgres' user already exists?
-** Best Database security practices? Maybe go read OWASP?
+    * Initial install
+    * Users? DB contents? It says 'postgres' user already exists?
+    * Best Database security practices? Maybe go read OWASP?
 * Configure Django with initial config
 * Customization, maybe go through with a practice "production push"
 * Figure out how to automate the non-installation parts, such as database setup, configuration, etc. May be part docker, part python script
@@ -36,16 +36,16 @@ Still to be done:
 Issues I ran into:
 
 * Getting the initial Docker setup to work
-** Ran into issues possibly related to an old version of VirtualBox, or my recent upgrade to OSX El Capitan
-** Solution: Use Kitematic to initialize the base docker-vm
+    * Ran into issues possibly related to an old version of VirtualBox, or my recent upgrade to OSX El Capitan
+    * Solution: Use Kitematic to initialize the base docker-vm
 * Learning dockerfile syntax, especially CMD vs RUN.
-** Solution: Use RUN, not CMD except for a single run-time item
+    * Solution: Use RUN, not CMD except for a single run-time item
 * Getting the docker terminal to "work". 
-** (temp) Solution: Launch terminal from Kitematic
+    * (temp) Solution: Launch terminal from Kitematic
 * Activating a VirtualEnv in Python in a Dockerfile
-** Delete /bin/sh in the dockerfile, and map /bin/bash to /bin/sh
+    * Delete /bin/sh in the dockerfile, and map /bin/bash to /bin/sh
 * Getting Postgres installed/setup
-** Ran into path issues, as well as possible old instructions
-** Add the Ubuntu Postgres installed binary path to bash path
+    * Ran into path issues, as well as possible old instructions
+    * Add the Ubuntu Postgres installed binary path to bash path
 
 I'm sure there will be more soon, but its nearly 3am, and I have work in the morning.
