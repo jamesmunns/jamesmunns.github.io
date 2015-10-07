@@ -11,6 +11,7 @@ Perfect! I thought. Why not use the chance to learn a little about Docker at the
 Well, after a bit of learning, and a bit of fighting with a Docker Script I wrote (I was using RUN and not CMD, oops), I managed to get it up and going.
 
 Achieved so far:
+
 * Installed all components in a Docker Container
 ** Ubuntu 14.04
 ** Virtualenv, Python3.x, pip
@@ -21,6 +22,7 @@ Achieved so far:
 * Checked that some of the next steps work
 
 Still to be done:
+
 * Configure Postgres with initial config
 ** Initial install
 ** Users? DB contents? It says 'postgres' user already exists?
@@ -32,6 +34,7 @@ Still to be done:
 * Figure out how to deactivate a virtualenv inside of a dockerfile
 
 Issues I ran into:
+
 * Getting the initial Docker setup to work
 ** Ran into issues possibly related to an old version of VirtualBox, or my recent upgrade to OSX El Capitan
 ** Solution: Use Kitematic to initialize the base docker-vm
